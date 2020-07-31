@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>NewPlatform.Flexberry.StyleCopRuleset</id>
-    <version>1.0.0-beta01</version>
+    <version>1.0.0-beta02</version>
     <title>Flexberry StyleCop</title>
     <authors>New Platform Ltd</authors>
     <owners>New Platform Ltd</owners>
@@ -10,6 +10,7 @@
     <projectUrl>https://github.com/Flexberry/NewPlatform.Flexberry.StyleCopRuleset</projectUrl>
     <iconUrl>https://flexberry.net/img/logo-color.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <developmentDependency>true</developmentDependency>
     <description>Flexberry StyleCop ruleset and settings package.</description>
     <releaseNotes>
     </releaseNotes>
@@ -21,9 +22,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="build\NewPlatform.Flexberry.StyleCopRuleset.props" target="build\NewPlatform.Flexberry.StyleCopRuleset.props" />
-    <file src="build\NewPlatform.Flexberry.StyleCopRuleset.target" target="build\NewPlatform.Flexberry.StyleCopRuleset.target" />
-    <file src="Config\stylecop.json" target="Config\stylecop.json" />
+    <file src="build\**" target="build" />
     <file src="RuleSet\Flexberry.ruleset" target="RuleSet\Flexberry.ruleset" />
   </files>
 </package>
