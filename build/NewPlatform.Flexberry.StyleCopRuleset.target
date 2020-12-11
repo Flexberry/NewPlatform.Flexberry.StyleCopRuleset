@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
-    <ItemGroup>
-        <AdditionalFiles Include="$(MSBuildThisFileDirectory)..\Config\stylecop.json">
-            <Link>stylecop.json</Link> 
-        </AdditionalFiles>    
-    </ItemGroup>    
+    <PropertyGroup>
+        <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)..\RuleSet\Flexberry.ruleset</CodeAnalysisRuleSet>
+    </PropertyGroup>
 </Project>
